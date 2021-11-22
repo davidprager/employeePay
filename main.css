@@ -1,0 +1,17 @@
+.form {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-column-gap: 10px;
+}
+
+ #hourlyEntry, #salaryEntry, #commissionEntry {
+     display: none;
+ }
+
+ #formSubmit {
+     margin-top: 20px;
+ }
+
+.input {
+    margin-top: 10px;
+}

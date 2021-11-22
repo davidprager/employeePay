@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EmployeeClass</title>
+    <script src="JSConsole.js"></script>
+    <script src="Employee.js"></script>
+    <script src="HourlyEmployee.js"></script>
+    <script src="SalariedEmployee.js"></script>
+    <script src="CommissionedEmployee.js"></script>
+    <script src="employeeEntry.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body onload="employeeEntry()"></body>
+<h1>Employee Entry Form</h1>
+<form>
+    <div id="topForm" class="form">
+        <label for="name">Name</label>
+        <input type="text" id="name">
+        <label for='title' class = "input">Title</label>
+        <input type="text" class = "input" id="title">
+        <p>Select type of employee</p><br>
+        <label for="hourlyOption">Hourly</label>
+        <input type="radio" name="empType" value="hourly" id="hourlyOption">
+        <label for="salaryOption">Salary</label>
+        <input type="radio" name="empType" value="salary" id="salaryOption">
+        <label for="commissionOption">Commission</label>
+        <input type="radio" name="empType" value="commission" id="commissionOption">
+        <p></p>
+        <p></p>
+    </div>
+    <div id="hourlyEntry" class="form">
+
+        <label for="hourlyRate" class = "input">Hourly Rate</label>
+        <input type="text" class = "input" id="hourlyRate">
+
+        <label for="hours" class = "input">Hours</label>
+        <input type="number" class = "input" id="hours">
+
+    </div>
+    <div id="salaryEntry" class="form">
+        <label for="salary">Salary</label>
+        <input type="number" id="salary">
+    </div>
+    <div id="commissionEntry" class="form">
+
+        <label for="baseSalary" class = "input">Base Salary</label>
+        <input type="number" class = "input" id="baseSalary">
+
+        <label for="sales" class = "input">Sales</label>
+        <input type="number" class = "input" id="sales">
+
+        <label for="commissionRate" class = "input">Commission Rate</label>
+        <input type="number" class = "input" id="commissionRate">
+    </div>
+
+    <button type="button" value="submit" id="formSubmit">Submit</button>
+</form>
+<p id = "numberRecords"></p>
+<p>Click on the "Done"" button when you have finished entering data</p>
+<button type="button" value="submit" id="reportButton">Done</button>
+</html>
